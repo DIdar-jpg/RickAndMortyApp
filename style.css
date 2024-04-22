@@ -1,3 +1,6 @@
+.nav-desk{
+    display: none;
+}
 .carousel-item{
     height: 200px;
     overflow: hidden;
@@ -75,8 +78,14 @@ button:focus{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
-
+.all_characters{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+.card-body{
+    padding: 8px;
+}
 
 
 
@@ -99,6 +108,15 @@ button:focus{
     .carousel-item{
         height: 340px;
     }
+    .all_characters{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-mob{
+        display: none;
+    }
+    .nav-desk{
+        display: block;
+    }
 }
 @media (min-width: 640px) {
     .intro-mob{
@@ -106,5 +124,19 @@ button:focus{
     }
     .intro-desktop{
         display: block;
+    }
+    .all_characters{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .intro-mob{
+        display: none;
+    }
+    .intro-desktop{
+        display: block;
+    }
+    .all_characters{
+        grid-template-columns: repeat(4, 1fr);
     }
 }

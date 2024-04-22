@@ -9,19 +9,60 @@
 </head>
 <body>
     <header class="w-100 bg-dark py-3">
-        <nav class="container px-5">
+        <nav class="nav-mob px-5 py-3 navbar navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav-desk container px-5">
             <ul class="nav nav-underline">
                 <li class="nav-item ">
-                  <a class="nav-link text-light active" aria-current="page" href="#">Active</a>
+                  <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-light" href="#">Favourites</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Link</a>
+                  <a class="nav-link text-light" href="#">Hated</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Link</a>
+                  <a class="nav-link text-light" href="#">Profile</a>
                 </li>
               </ul>
         </nav>
@@ -58,19 +99,19 @@
               <p>Smth Info</p>
             </div>
             <div style="background: linear-gradient(229.99deg, #000000 -26%, #000000b2 145%);">
-              <h2>Person_1</h2>
-              <p>Smth Info</p>
-            </div>
-            <div style="background: linear-gradient(215.32deg, #000000 -1%, #9E0706 124%);">
-              <h2>Person_1</h2>
-              <p>Smth Info</p>
-            </div>
-            <div style="background: linear-gradient(221.87deg, #07703f 1%, #000000 128%);">
               <h2>Person_2</h2>
               <p>Smth Info</p>
             </div>
-            <div style="background: linear-gradient(222deg, rgba(88,15,128,1) 0%, rgba(162,121,218,1) 100%);">
+            <div style="background: linear-gradient(215.32deg, #000000 -1%, #9E0706 124%);">
               <h2>Person_3</h2>
+              <p>Smth Info</p>
+            </div>
+            <div style="background: linear-gradient(221.87deg, #07703f 1%, #000000 128%);">
+              <h2>Person_4</h2>
+              <p>Smth Info</p>
+            </div>
+            <div style="background: linear-gradient(222deg, rgba(88,15,128,1) 0%, rgba(162,121,218,1) 100%);">
+              <h2>Person_5</h2>
               <p>Smth Info</p>
             </div>
           </div>
@@ -79,12 +120,73 @@
             <div style="background-image: url('https://i.pcmag.com/imagery/articles/02yIl1hE2zxgbDXJNEpJ5kr-1..v1701746046.png');"></div>     
             <div style="background-image: url('https://mma.metaratings.ru/storage/images/5e/e2/5ee2202063100f011e6c85904b6a7c5f.jpg');"></div>     
             <div style="background-image: url('https://mma.metaratings.ru/storage/images/5e/e2/5ee2202063100f011e6c85904b6a7c5f.jpg');"></div>     
+            <div style="background-image: url('https://mma.metaratings.ru/storage/images/5e/e2/5ee2202063100f011e6c85904b6a7c5f.jpg');"></div>     
           </div>
           <div class="controls">
             <button class="down_button">Down</button>
             <button class="up_button">Up</button>
           </div>
         </div>
+      </section>
+
+      <section class="all_characters mt-3">
+        <div class="card" style="width: 100%" id="1">
+          <img src="https://mma.metaratings.ru/storage/images/5e/e2/5ee2202063100f011e6c85904b6a7c5f.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <!-- Добавить кнопку из бутстрапа и сделать так что при клике на кнопку
+            выводилось в консоль Яхай -->
+          </ul>
+        </div>
+        <div class="card" style="width: 100%" id="2">
+          <img src="https://mma.metaratings.ru/storage/images/5e/e2/5ee2202063100f011e6c85904b6a7c5f.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <!-- Добавить кнопку из бутстрапа и сделать так что при клике на кнопку
+            выводилось в консоль Яхай -->
+          </ul>
+        </div>
+        <div class="card" style="width: 100%" id="3">
+          <img src="https://mma.metaratings.ru/storage/images/5e/e2/5ee2202063100f011e6c85904b6a7c5f.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <!-- Добавить кнопку из бутстрапа и сделать так что при клике на кнопку
+            выводилось в консоль Яхай -->
+          </ul>
+        </div>
+        <div class="card" style="width: 100%" id="4">
+          <img src="https://mma.metaratings.ru/storage/images/5e/e2/5ee2202063100f011e6c85904b6a7c5f.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <!-- Добавить кнопку из бутстрапа и сделать так что при клике на кнопку
+            выводилось в консоль Яхай -->
+          </ul>
+        </div>
+        
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
