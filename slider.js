@@ -16,7 +16,6 @@ upBtn.addEventListener('click', () => changeSlide('up'))
 downBtn.addEventListener('click', () => changeSlide('down'))
 
 const changeSlide = direction => {
-
     if (direction === 'up') {
         activeSlideIndex++
         activeSlideIndex === slidesCount ? activeSlideIndex = 0 : null
@@ -24,9 +23,10 @@ const changeSlide = direction => {
         activeSlideIndex--
         activeSlideIndex < 0 ? activeSlideIndex = slidesCount-1 : null
     }
-
     // clientHeight получаем высоту introDesktop у пользователя
     const height = introDesktop.clientHeight
     mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px)`
     sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`
 }
+
+
