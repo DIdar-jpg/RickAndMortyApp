@@ -86,8 +86,42 @@ button:focus{
 .card-body{
     padding: 8px;
 }
-
-
+.all_char_title_wrp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+.all_char_title{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    background: #C4E74A;
+    padding: 14px 18px;
+    transition-duration: 0.3s;
+}
+.all_char_title:hover{
+    background: #202329;
+    color: #C4E74A;
+}
+.alive_status{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-left: 8px;
+}
+.card li .card-body{
+    transition-duration: 0.4s;
+}
+.card li:hover, .card-body:hover{
+    background: #202329;
+    color:#C4E74A;
+}
+/* .card:hover li{
+    background: #202329;
+    color:#A9D3E9;
+} */
 
 
 
